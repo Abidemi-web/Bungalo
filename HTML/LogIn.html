@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Bungalo LogIn</title>
+<style>
+    body{
+        background-image: url(../Img/logo.img.jpg);
+    }
+  .form{
+    width: 500px;
+    height: 430px;
+    background: linear-gradient(to top, rgba(6, 0, 0, 0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    text-align: center;
+    right: 1%;
+    left: 30%;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 40px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    
+    color: blue;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+    margin-left: 105px;
+}
+p{
+    color: white;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid blue;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: blue;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btnn:hover{
+    transform: scale(0.8);
+    
+}
+.btnn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: blue;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover{
+    color: blue;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.find{
+    margin-left: 30px;
+}
+
+@media (max-width: 780px) {
+    .form{
+    width: 500px;
+    height: 480px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    text-align: center;
+    right: 1%;
+    left: 0;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+  }
+  
+</style>
+<body>
+    <div class="form">
+        <div class="find">
+        <h2>Login Here</h2>
+        <input id="text" type="email"  placeholder="Enter Email Here" required>
+        <input id="psw" type="password" name="" placeholder="Enter Password Here" required>
+        <button type="button" class="btnn" onclick="
+            valiDate();
+        ">Login</button>
+
+        <p class="link">Don't have an account<br>
+        <a href="signup.html">Sign up</a> here</p>
+        <p class="liw">Log in with</p>
+
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+        </div>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="../JS/login.js"></script>
+</body>
+</html>

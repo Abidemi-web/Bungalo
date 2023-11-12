@@ -1,0 +1,427 @@
+* {
+  font-family: Arial;
+  line-height: 15px;
+  margin: 0;
+  
+  
+  
+}
+
+/* header */
+.head{
+  background-color: white;
+  height: 60px;
+  box-shadow: 10px 12px 5px 0px rgba(0,0,0,0.27); 
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+    position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  
+
+}
+
+.btn1{
+  background-color: white;
+  border-color: blue;
+  border-style:  solid;
+  border-radius: 3px;
+  padding: 6px;
+  width: 70px;
+  color: blue;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn1:hover{
+  background-color: blue;
+  color: white;
+  
+}
+.btn2 {
+ 
+ background-color: blue;
+ border: blue;
+ border-style:  solid;
+ border-radius: 5px;
+ padding: 6px;
+ width: 70px;
+ color: white;
+ font-size: 16px;
+ cursor: pointer;
+ 
+}
+.btn2:hover{
+  
+  transform: scale(0.8);
+  
+}
+.head h2 img {
+  color: blue;
+  margin-left: 20px;
+  width: 60px;
+}
+
+.navbar a,
+.close {
+  display: inline;
+  margin: 30px;
+  
+  
+}
+
+.navbar  a {
+  text-decoration-line: none;
+  color: black;
+  font-size: 20px;
+}
+.navbar a:hover{
+  background-color: blue;
+  transform: translate(10px, 5px);
+  color: white;
+}
+
+.menu,
+.close
+ {
+  display: none;
+
+}
+
+section {
+  margin-top: 10%;
+  margin-left: 10%;
+  display: inline-block;
+  
+  
+  
+}
+
+.headingtext h1 {
+  line-height: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.paragraph p {
+  margin-top: 35px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 100%;
+}
+
+.btn3 {
+  margin-left: 35%;
+  background-color: blue;
+  color: #fff;
+  margin-top: 70px;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+.btn3:hover {
+  transform: scale(0.8);
+}
+.image img {
+  display: inline;
+  margin-left: 50%;
+  margin-top: -26%;
+  width: 40%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 0;
+  margin-left: 30px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+.container .contain:hover {
+  transform: translate(10px, 5px);
+}
+.contain{
+  background-color: white;
+  box-shadow: 4px 9px 5px -1px rgba(0,0,0,0.75);
+  margin: 20px;
+  width: 90%;
+  height: 100%;
+  outline: 1px solid blue;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.contain h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+.contain img {
+  width: 100%;
+  
+}
+h1 {
+ text-align: center;
+ margin-top: 18%;
+ font-size: 60px;
+}
+h1 span {
+  color: blue;
+}
+
+.boxes {
+  display: flex;
+  text-align: center;
+  margin-left: 100px;
+  gap: 30px;
+  
+}
+.box img {
+  width: 100%;
+}
+.box .bigImg {
+  width: 80%;
+}  
+.box h3 {
+  margin-bottom: 17px;
+}
+.box p {
+  line-height: 30px;
+}
+.box p b {
+  color: blue;
+}
+
+.box button {
+  margin-top: 16px;
+  width: 50%;
+  height: 7%;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.box button:hover{
+  transform: scale(0.9);
+}
+
+.footers {
+  display: flex;
+  gap: 180px;
+  margin-top: 100px;
+  margin-left: 27%;
+  color: white;
+  background-color: black;
+  padding-top: 20px;
+  
+}
+ .foot h5 {
+  margin-top: 30px;
+}
+.foot .iconn  {
+  color: blue;
+  display: flex;
+  gap: 40px;
+  
+  margin-top: 50px;
+
+}
+.foot .iconn ion-icon {
+  font-size: 30px;
+  color: white;
+}
+.foot .iconn ion-icon:hover {
+  color: blue;
+  transform: translate(10px, 5px);
+}
+footer h5 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  margin-bottom: -15px;
+  font-size: 15px
+}
+
+.foot a {
+  color: white;
+  text-decoration-line: none;
+}
+.foot a:hover {
+  color: blue;
+  font-size: 30px;
+}
+
+footer {
+  background-color: black;
+}
+
+
+/*****************For Mobile**************/
+@media (max-width: 991px) {
+  /* html {
+     font-size: 55%; 
+
+  } */
+  .head {
+    padding: 2rem 2rem;
+  }
+}
+
+
+
+@media (max-width: 780px) {
+
+ .head h2{
+  font-size: 25px;
+ }
+  
+
+  .head {
+    padding: 30px;
+    height: 20px;
+    
+  }
+  
+.btn1,
+.btn2 {
+  width: 50px;
+  font-size: 10px;
+
+  
+}
+
+  
+
+ .head .navbar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 1.5rem;
+  margin: 1rem;
+  background: #eee;
+}
+.menu,
+.close {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+  
+.menu:hover {
+  transform: scale(0.8);
+}
+
+.close:hover {
+  transform: scale(0.8);
+}
+
+
+nav.navbar.Active2 {
+  display: block;
+  
+}
+
+ section {
+  margin-top: 10%;
+  margin-left: 10%;
+  display: block;
+  
+  
+  
+}
+
+.headingtext h1 {
+  line-height: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.paragraph p {
+  margin-top: 35px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 100%;
+}
+.image img {
+  display: block;
+  width: 90%;
+  margin-top: 70px;
+  margin-left: 20px; 
+} 
+
+ .container {
+  display: block;
+  margin-right: 28px;
+}
+
+.contain h4 {
+  font-size: 15px;
+  
+}
+.contain {
+  height: 200%;
+}
+
+h1 {
+  font-size: 25px;
+}
+.boxes {
+  display: block;
+  margin-right: 20%;
+  
+}
+.box {
+  margin-top: 30px;
+}
+.box p {
+  line-height: 17px;
+}
+
+.footers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 8%;
+  height: 270px;
+}
+
+.fot h4 {
+  margin-left: 70%;
+  margin-top: -6%;
+}
+.fot h5 {
+  margin-left: 65%;
+}
+footer .fott {
+  font-size: 12px;
+  margin-top: -11%;
+}
+}
+
+
+  
+
+  
+
+

@@ -1,0 +1,74 @@
+.buy {
+  background-image: url(../Img/02C.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  margin-top: 7px;
+  object-fit: cover;
+  position: relative;
+}
+
+.buy h1 {
+  position: absolute;
+  color: white;
+  margin-top: 90px;
+  left: 20%;
+  text-shadow: 2px 2px 2px blue;
+}
+.buy p {
+  position: absolute;
+  color: white;
+  margin-top: 180px;
+  left: 26%;
+  text-shadow: 2px 2px 2px blue;
+  text-align: center;
+  font-size: 26px;
+  line-height: 40px;
+
+}
+
+.hz {
+  margin-top: 140px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 2px blue;
+}
+
+.containers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  row-gap: 40px;
+  column-gap: 0;
+  margin-left: 30px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+.Newcontainer {
+  margin-top: -56px;
+}
+
+@media (max-width: 780px) {
+  .containers {
+    overflow: scroll;
+    
+    
+  }
+
+  .hz {
+    font-size: 30px;
+  }
+
+  .buy p {
+    font-size: 20px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+  }
+  .buy h1 {
+    font-size: 30px;
+    margin-right: 70px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

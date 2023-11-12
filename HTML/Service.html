@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+  <style>
+    body {
+      background-image: url(../Img/images\ \(18\).jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      color: white;
+    margin-top: 90px;
+    text-align: center;
+  text-shadow: 2px 2px 2px blue;
+  font-size: 40px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      width: 20%;
+      height: 60px;
+      font-size: 30px;
+      text-align: center;
+      margin-left: 40%;
+      margin-top: 20%;
+      transition: ease-in-out ;
+    }
+    button:hover {
+      transform: scale(0.9);
+    }
+
+    @media (max-width: 780px) {
+      body {
+        background-color: black;
+      }
+    }
+    button {
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Click the button below to message us</h1>
+  <a href="https://wa.link/cx0v89"><button onclick="
+    message()
+  ">Bungalo</button></a>
+
+  <script>
+    function message() {
+      alert("Thanks for choosing this website")
+    }
+  </script>
+</body>
+</html>
